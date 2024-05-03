@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #0099ff;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.recipe-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-form h2 {
+    margin-top: 0;
+}
+
+.recipe-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.recipe-form input[type="text"],
+.recipe-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.recipe-form button {
+    background: #0099ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recipe-form button:hover {
+    background: #0057b3;
+}
+
+footer {
+    background: #0099ff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 15px; /* Decrease padding for smaller screens */
+    }
+
+    nav ul li {
+        margin-right: 10px; /* Decrease margin between menu items */
+    }
+
+    main {
+        padding: 15px; /* Decrease main content padding */
+    }
+
+    .recipe-form {
+        padding: 15px; /* Decrease padding for smaller screens */
+    }
+}

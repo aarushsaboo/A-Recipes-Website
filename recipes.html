@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <header>
+        <h1>Recipes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="submit_recipe.html">Submit Recipe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recipe">
+            <h2>Dhokla</h2>
+            <div class="recipe-info">
+                <div class="recipe-image">
+                    <img src="recipe1.jpg" alt="Dhokla" width="300">
+                </div>
+                <div class="recipe-details">
+                    <h3>Ingredients:</h3>
+                    <ul>
+                        <li>1 cup gram flour (besan)</li>
+                        <li>1/2 cup yogurt</li>
+                        <li>1/4 teaspoon turmeric powder</li>
+                        <li>1 teaspoon ginger-green chili paste</li>
+                        <li>1 tablespoon lemon juice</li>
+                        <li>1 teaspoon fruit salt (eno)</li>
+                        <li>Salt to taste</li>
+                        <li>For tempering:</li>
+                        <li>1 tablespoon oil</li>
+                        <li>1 teaspoon mustard seeds</li>
+                        <li>1 teaspoon sesame seeds</li>
+                        <li>2-3 green chilies, slit</li>
+                        <li>8-10 curry leaves</li>
+                        <li>2 tablespoons chopped coriander leaves</li>
+                        <li>2 tablespoons grated coconut (optional)</li>
+                    </ul>
+                    <h3>Instructions:</h3>
+                    <ol>
+                        <li>In a mixing bowl, add gram flour, yogurt, turmeric powder, ginger-green chili paste, lemon juice, and salt. Mix well.</li>
+                        <li>Add water as needed to make a smooth batter. The batter should have a pouring consistency.</li>
+                        <li>Grease a dhokla plate or any flat plate with oil.</li>
+                        <li>Boil water in a steamer. Once the water starts boiling, add fruit salt to the batter and mix well.</li>
+                        <li>Immediately pour the batter into the greased plate and place it in the steamer.</li>
+                        <li>Cover and steam for 12-15 minutes or until a toothpick inserted in the center comes out clean.</li>
+                        <li>Remove the plate from the steamer and let it cool slightly.</li>
+                        <li>Heat oil in a small pan for tempering. Add mustard seeds and let them splutter.</li>
+                        <li>Add sesame seeds, green chilies, and curry leaves. Saute for a few seconds.</li>
+                        <li>Pour this tempering over the dhokla and spread evenly.</li>
+                        <li>Garnish with chopped coriander leaves and grated coconut (optional).</li>
+                        <li>Cut the dhokla into squares or diamonds and serve with green chutney or sweet chutney.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comments section -->
+        <section class="recipe">
+            <div class="recipe-comments">
+                <h3>Comments</h3>
+                <form id="comment-form">
+                    <textarea id="comment" placeholder="Add your comment here"></textarea>
+                    <button type="submit">Add Comment</button>
+                </form>
+                <br>
+                <div id="comment-list" class="comment-list">
+                    <!-- Comment items will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation buttons -->
+        <div class="recipe-navigation">
+            <button id="prev-recipe">Prev</button>
+            <button id="next-recipe">Next</button>
+        </div>
+    </main>
+
+    <aside class="sidebar">
+        <!-- Add beautiful patterns or design elements here -->
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Recipe Sharing Platform</p>
+    </footer>
+
+    <script src="recipes.js"></script>
+</body>
+</html>

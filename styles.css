@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* subtle background color for the body */
+}
+
+header, footer {
+    background-image: linear-gradient(to right, #009fd4, #1b5563); /* Light blue to peacock blue gradient */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em; /* Increase font size */
+    color: #ffffff; /* Change font color */
+    font-weight: bold; /* Make the font bold */
+    text-shadow: 2px 2px 4px #000000; /* Subtle text shadow for depth */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block; /* Aligns the navigation menu properly */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Add padding for better touch interaction */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.2); /* Subtle hover effect */
+}
+
+main {
+    padding: 20px;
+    min-height: 80vh; /* Minimum height to push the footer down */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Page-Specific Styles */
+h1, h2 {
+    margin-top: 0;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Styles for image gallery */
+.image-gallery {
+    display: flex;
+    justify-content: center; /* Center the images horizontally */
+    gap: 20px; /* Add space between each image container */
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column; /* Stack image and caption vertically */
+    align-items: center; /* Center-align the items in the vertical stack */
+    width: 200px; /* Set a fixed width for each image container */
+    padding-right: 50px;
+}
+
+.image-container img {
+    width: 250px;
+    height: 200px;
+}
+
+.image-container p {
+    text-align: center;
+    margin-top: 8px; /* Spacing between the image and the caption */
+}
+
+.recipes-link {
+    display: block; /* Make the link take the full width of its container */
+    margin: 20px 0; /* Margin top and bottom */
+    font-size: 1.2em; /* Larger font size */
+    color: #1b5563; /* Dark peacock blue color for the link */
+    text-decoration: none; /* No underline */
+}
+
+.recipes-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.recipe-photo {
+    width: 150px; /* Adjusted image width */
+    height: auto; /* Maintain aspect ratio */
+    float: left; /* Float the image to the left */
+    margin: 0 15px 10px 0; /* Adjusted margins for spacing */
+}
+
+/* Adjusted CSS for hover effect and link behavior */
+.image-gallery img {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.image-gallery img:hover {
+    opacity: 0.7; /* Reduce opacity on hover for visual feedback */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    header {
+        padding: 15px 0;
+    }
+    h1 {
+        font-size: 2em; /* Decrease font size */
+    }
+    nav ul li {
+        margin-right: 10px; /* Decrease margin between menu items */
+    }
+    main {
+        padding: 10px; /* Decrease main content padding */
+    }
+    .image-container {
+        width: 150px; /* Decrease image container width */
+        padding-right: 20px;
+    }
+}
